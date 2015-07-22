@@ -16,6 +16,8 @@ public class Application implements CommandLineRunner {
         SpringApplication.run(Application.class);
         
         RestTemplate restTemplate = new RestTemplate();
+        Value quote = restTemplate.getForObject("http://localhost:8080/greeting", Value.class);
+        log.info(quote.toString());
     }
 
     @Override
