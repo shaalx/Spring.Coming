@@ -7,3 +7,4 @@
 ##	gradle
 		gradle build
 		java -jar build/libs/gs-rest-service-0.1.0.jar
+		(spring.daoapp.io:8080)[http://spring.daoapp.io:8080/]
